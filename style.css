@@ -620,3 +620,21 @@ footer p {
 .location-icon, .location-address {
     display: flex;
 }
+
+
+/* RESPONSIVENESS 14/01/2021 */
+
+@media screen and (max-width: 768px) {
+   
+    .nav-right {
+        display: none;
+    }
+
+    .form-div {
+        display: none;
+    }
+
+    .about-axet {
+        flex-wrap: wrap;
+    }
+}
