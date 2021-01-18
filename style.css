@@ -9,9 +9,6 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-    /* max-width: 1440px; */
-    /* overflow-x: hidden; */
-    /* box-sizing: border-box; */
 }
 
 h1,
@@ -256,7 +253,8 @@ nav {
     display: flex;
     background-color: rgba(55, 55, 55, 0.79);
     border-radius: 5px;
-    padding: 20px 35px;
+    padding: 18px 35px;
+    margin: 40px 20px 0 0;
     width: 340px;
     height: 365px;
     box-sizing: border-box;
@@ -264,9 +262,9 @@ nav {
 
 .form-login-text {
     color: #fff;
-    
-    font-weight: 100;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 14px;
 }
 
 form {
@@ -278,12 +276,22 @@ input {
     background-color: #fff;
     border-radius: 4px;
     margin: 10px 0;
-    padding: 15px 20px;
+    padding: 13px 19px;
     width: 100%;
+    border: none;
 }
 
+input::placeholder {
+    color: #848484;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
 .forgot-password {
     color: #b6c4da;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
     float: right;
     clear: both;
 }
@@ -293,14 +301,15 @@ input {
     justify-content: center;
     width: 100%;
     height: 50px;
-    margin: 80px 0 20px;
+    margin: 60px 0 0;
     align-items: center;
+    font-size: 14px;
+    line-height: 19px;
 }
 
 .dont-have-acct {
     color: #fff;
     text-align: center;
-    margin: 0 0 45px;
 }
 
 .signup {
@@ -576,7 +585,21 @@ input {
     position: absolute;
     top: 280px;
 }
- 
+
+.news-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;    
+}
+.news-button button {
+    width: 137px;
+    height: 34px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    justify-content: center;
+}
 /* NEWS SECTION */
 
 /* VIDEO SECTION */
@@ -743,6 +766,10 @@ hr {
     .header-right{
         display: none;
     }
+
+    nav {
+        align-content: center;
+    }
     .nav-right {
         display: none;
         width: 100%;
@@ -752,6 +779,7 @@ hr {
     .main-background {
         background-size: cover;
         width: 100%;
+        height: 100vh;
     }
 
     nav #toggle-menu:checked ~ .nav-right {
@@ -774,6 +802,9 @@ hr {
         display: none;
     }
 
+    .landing-text {
+        margin-top: 20px;
+    }
     .form-div {
         display: none;
     }
@@ -781,7 +812,6 @@ hr {
     .about-axet {
         display: block;
         text-align: justify;
-        padding: 30px 30px;
     }
 
     .about-axet-text {
@@ -792,6 +822,23 @@ hr {
         width: 100%;
     }
 
+    .services-contents {
+        width: 100%;
+    }
+
+    .services-button {
+        right: 34%;
+    }
+
+    .for-h5-p {
+        text-align: center;
+    }
+
+    .for-bg {
+        background-size: cover;
+        width: 100%;
+        height: fit-content;
+    }
     .services-contents-container {
         grid-template-columns: 1fr;
         row-gap: 20px;
